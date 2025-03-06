@@ -105,7 +105,7 @@ section{
 .container{
     max-width: 1280px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto 5%;
 }
 
@@ -223,7 +223,52 @@ header img{
 
 
 /* ===================== Watching Continue ===================== */
-
+.wc-section{
+    margin-top: 100px;
+}
+section .container.wc-box{
+    position: relative;
+}
+section .container.wc-box h2{
+    position: absolute;
+    left: 0;
+    top: -70px;
+}
+.wc-wrapper{
+    width: 100%;
+    overflow-x: hidden;
+    margin: auto;
+    position: relative;
+    padding: 50px 0;
+}
+.wc-wrapper i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: transparent;
+    transition: 300ms ease;
+}
+.wc-wrapper i:hover{
+    background: var(--color-btn-bg);
+}
+.wc-wrapper :nth-child(2){
+    left: 1px;
+}
+.wc-wrapper :last-child{
+    right: 1px;
+}
+.wc-container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.wc-container img{
+    width: 410px;
+    height: 250px;
+}
 
 /* ===================== Movie Display Container ===================== */
 
