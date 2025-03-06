@@ -386,3 +386,88 @@ button.watch-now:hover{
 
 
 /* ===================== Footer Section ===================== */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container .upper-ftr{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+footer a{
+    color: var(--color-text2);
+    margin-bottom: 16px;
+    display: inline-block;
+    font-size: var(--font-size-title);
+}
+footer h2{
+    margin-bottom: 20px;
+    color: var(--color-btn-bg);
+}
+.upper-ftr .ftr-box{
+    flex: 1;
+}
+.upper-ftr .ftr-box img{
+    width: 170px;
+    height: auto;
+}
+.upper-ftr .ftr-box p{
+    margin: 20px 0;
+    width: 80%;
+}
+.contact-ftr p{
+    color: var(--color-text2);
+}
+footer .social-icons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+footer .social-icons i{
+    font-size: 30px;
+    color: var(--color-text2);
+    cursor: pointer;
+    transition: .5s ease;
+}
+footer .social-icons i:hover{
+    color: var(--color-btn-bg);
+}
+footer .form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    border-bottom: 1px solid var(--color-btn-bg);
+}
+footer form{
+    width: 50%;
+    height: 57px;
+    border-radius: 15px;
+    background-color: var(--color-section);
+    position: relative;
+    margin: 38px 0;
+}
+footer form input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding-left: 30px;
+    color: var(--color-text1);
+    font-size: var(--font-size-title);
+}
+footer form input::placeholder{
+    color: var(--color-text1);    
+}
+footer form button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+}
+.lower-ftr{
+    margin: 30px 0;
+    text-align: center;
+}
