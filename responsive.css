@@ -1,0 +1,32 @@
+
+@import url('/style.css');
+/* ============ large screen ============ */
+@media only screen and (min-width: 710px) and (max-width: 1200px){
+    nav .searchSub{
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        right: -380px;
+        top: 45px;
+        border-radius: 8px;
+        background: var(--color-bg);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 20px;
+        transition: all .5s ease;
+        z-index: 10;
+    }
+    nav .searchSub.active{
+        right: 5%;
+        display: block
+    }
+    nav .searchSub form{
+        margin: 20px 0;
+    }
+    #menuLargeScreen{
+        display: block;
+    }
+}   

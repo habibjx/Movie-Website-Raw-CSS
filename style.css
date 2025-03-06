@@ -38,6 +38,10 @@
     --font-weight-medium: 500;
     --font-weight-regular: 400; 
 }
+html, body {
+    width: 100%;
+    overflow-x: hidden !important;
+}
 body{
     scroll-behavior: smooth;
     width: 100%;
@@ -103,9 +107,8 @@ section{
     background-color: var(--color-text2);
 }
 .container{
-    max-width: 1280px;
     width: 100%;
-    /* border: 1px solid red; */
+    max-width: 1280px;
     margin: auto 5%;
 }
 
@@ -116,9 +119,11 @@ nav{
     margin: 20px auto;
     display: flex;
     justify-content: center;
+    border: 1px solid red;
+    position: relative;
+    
 }
 nav .container{
-    margin: auto 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,6 +147,11 @@ nav .nav-links a * {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+.searchSub{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 nav .container .search{
     background: var(--color-section);
@@ -173,7 +183,11 @@ nav .container .search i{
     font-size: var(--font-size-subHeader);
     cursor: pointer;
 }
-
+#menuLargeScreen{
+    display: none;
+    font-size: 40px;
+    color: var(--color-btn-bg);
+}
 
 /* ===================== Hero Area ===================== */
 header{
@@ -186,12 +200,15 @@ header{
     border-radius: 30px 30px 0 0;
 }
 header .container{
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
     padding: 70px 0;
+}
+header .hero-text,
+header .hero-video{
+    width: 50%;
 }
 header .container .review{
     display: flex;
