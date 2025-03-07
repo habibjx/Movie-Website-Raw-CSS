@@ -426,6 +426,7 @@ footer h2{
 }
 .upper-ftr .ftr-box{
     flex: 1;
+    min-width: 230px;
 }
 .upper-ftr .ftr-box img{
     width: 170px;

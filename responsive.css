@@ -29,4 +29,18 @@
     #menuLargeScreen{
         display: block;
     }
+
+    .filter-container {
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    footer .container .upper-ftr {
+        flex-wrap: wrap;
+    }
+    footer form {
+        width: 70%;
+    }
 }   
