@@ -10,19 +10,22 @@
 // Globals variable
 let toggleNavStatus = false;
 
-//Onload handler 
+//Onload handler ====================
 
 window.onload = () => {
     main()
-    const searchSub = document.querySelector('.searchSub');
+
+
+
+
 }
 
 function main(){
-    // Dom references
+    // Dom references ====================
 
     
 
-    // event listeners
+    // event listeners ====================
 
 
 
@@ -30,50 +33,26 @@ function main(){
 }
 
 
-//Event handler
+//Event handler ====================
 
-//DOM function
+//DOM function ====================
 
 /**
- * this is for tablet nav toggle
+ * this is for navigation bar open close
+ * @param {Object} element 
  */
-function menuOpenCloseLargeScreen(){
-    const searchSub = document.querySelector('.searchSub');
+function navBarCloseOpen(element){
+    const navParent = document.querySelector(element);
 
     if(!toggleNavStatus){
-        searchSub.classList.add('active');
+        navParent.classList.add('active');
         toggleNavStatus = true;
     }else{
-        searchSub.classList.remove('active');
-        toggleNavStatus = false;
-    } 
-}
-/**
- * this is for phone nav toggle
- */
-function menuOpenCloseSmallScreen(){
-    const navWrapper = document.querySelector('.nav-wrapper');
-
-    if(!toggleNavStatus){
-        navWrapper.classList.add('active');
-        toggleNavStatus = true;
-    }else{
-        navWrapper.classList.remove('active');
-        toggleNavStatus = false;
-    } 
-}
-function filterMenuOpenClose(){
-    const filterContainer = document.querySelector('.filter-container');
-
-    if(!toggleNavStatus){
-       filterContainer.classList.add('active');
-        toggleNavStatus = true;
-    }else{
-       filterContainer.classList.remove('active');
+        navParent.classList.remove('active');
         toggleNavStatus = false;
     } 
 }
 
 
 
-//Utils function 
+//Utils function ====================

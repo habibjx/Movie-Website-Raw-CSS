@@ -14,7 +14,7 @@
         width: fit-content;
         height: fit-content;
         position: absolute;
-        right: -380px;
+        right: -430px;
         top: 45px;
         border-radius: 8px;
         background: var(--color-bg);
@@ -24,11 +24,11 @@
         justify-content: flex-start;
         align-items: flex-end;
         padding: 20px;
-        transition: all .5s ease;
+        transition: all .3s ease;
         z-index: 10;
     }
     nav .searchSub.active{
-        right: 5%;
+        right: 0;
         display: block
     }
     nav .searchSub form{
