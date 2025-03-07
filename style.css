@@ -119,18 +119,23 @@ nav{
     margin: 20px auto;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     position: relative;
     
 }
 nav .container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
+    gap: 40px;
 }
 nav .logo{
     width: 144px;
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
 }
 nav .nav-links{
     display: flex;
