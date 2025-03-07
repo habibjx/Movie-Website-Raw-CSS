@@ -127,6 +127,7 @@ nav .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 nav .logo{
     width: 144px;
@@ -183,7 +184,8 @@ nav .container .search i{
     font-size: var(--font-size-subHeader);
     cursor: pointer;
 }
-#menuLargeScreen{
+#menuLargeScreen,
+#menuSmallScreen{
     display: none;
     font-size: 40px;
     color: var(--color-btn-bg);
@@ -413,6 +415,7 @@ footer .container .upper-ftr{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 footer a{
     color: var(--color-text2);

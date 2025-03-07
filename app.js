@@ -35,6 +35,9 @@ function main(){
 
 //DOM function
 
+/**
+ * this is for tablet nav toggle
+ */
 function menuOpenCloseLargeScreen(){
     const searchSub = document.querySelector('.searchSub');
 
@@ -44,10 +47,23 @@ function menuOpenCloseLargeScreen(){
     }else{
         searchSub.classList.remove('active');
         toggleNavStatus = false;
-    }
-
-
-    
+    } 
 }
+/**
+ * this is for phone nav toggle
+ */
+function menuOpenCloseSmallScreen(){
+    const navWrapper = document.querySelector('.nav-wrapper');
+
+    if(!toggleNavStatus){
+        navWrapper.classList.add('active');
+        toggleNavStatus = true;
+    }else{
+        navWrapper.classList.remove('active');
+        toggleNavStatus = false;
+    } 
+}
+
+
 
 //Utils function 
