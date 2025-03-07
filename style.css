@@ -185,7 +185,8 @@ nav .container .search i{
     cursor: pointer;
 }
 #menuLargeScreen,
-#menuSmallScreen{
+#menuSmallScreen,
+.filter-menu{
     display: none;
     font-size: 40px;
     color: var(--color-btn-bg);
@@ -292,6 +293,7 @@ section .container.wc-box h2{
 /* ===================== Movie Display Container ===================== */
 
 /* filter part  */
+
 .filter-container{
     display: flex;
     align-items: center;

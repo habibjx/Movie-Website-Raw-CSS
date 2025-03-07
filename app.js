@@ -15,7 +15,6 @@ let toggleNavStatus = false;
 window.onload = () => {
     main()
     const searchSub = document.querySelector('.searchSub');
-    console.log(searchSub)
 }
 
 function main(){
@@ -60,6 +59,17 @@ function menuOpenCloseSmallScreen(){
         toggleNavStatus = true;
     }else{
         navWrapper.classList.remove('active');
+        toggleNavStatus = false;
+    } 
+}
+function filterMenuOpenClose(){
+    const filterContainer = document.querySelector('.filter-container');
+
+    if(!toggleNavStatus){
+       filterContainer.classList.add('active');
+        toggleNavStatus = true;
+    }else{
+       filterContainer.classList.remove('active');
         toggleNavStatus = false;
     } 
 }
